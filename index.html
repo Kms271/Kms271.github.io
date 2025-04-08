@@ -1,187 +1,1328 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>云崖小筑</title><meta name="author" content="Kms271"><meta name="copyright" content="Kms271"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="行到水穷处，坐看云起时">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="行到水穷处，坐看云起时">
 <meta property="og:type" content="website">
 <meta property="og:title" content="云崖小筑">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="云崖小筑">
 <meta property="og:description" content="行到水穷处，坐看云起时">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/postimg/1.jpg">
 <meta property="article:author" content="Kms271">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/img/postimg/1.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
-    (() => {
-      
-    const saveToLocal = {
-      set: (key, value, ttl) => {
-        if (!ttl) return
-        const expiry = Date.now() + ttl * 86400000
-        localStorage.setItem(key, JSON.stringify({ value, expiry }))
-      },
-      get: key => {
-        const itemStr = localStorage.getItem(key)
-        if (!itemStr) return undefined
-        const { value, expiry } = JSON.parse(itemStr)
-        if (Date.now() > expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return value
-      }
-    }
 
-    window.btf = {
-      saveToLocal,
-      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
-        const script = document.createElement('script')
-        script.src = url
-        script.async = true
-        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
-        script.onload = script.onreadystatechange = () => {
-          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
-        }
-        script.onerror = reject
-        document.head.appendChild(script)
-      }),
-      getCSS: (url, id) => new Promise((resolve, reject) => {
-        const link = document.createElement('link')
-        link.rel = 'stylesheet'
-        link.href = url
-        if (id) link.id = id
-        link.onload = link.onreadystatechange = () => {
-          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
-        }
-        link.onerror = reject
-        document.head.appendChild(link)
-      }),
-      addGlobalFn: (key, fn, name = false, parent = window) => {
-        if (!false && key.startsWith('pjax')) return
-        const globalFn = parent.globalFn || {}
-        globalFn[key] = globalFn[key] || {}
-        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
-        parent.globalFn = globalFn
-      }
-    }
+<link rel="canonical" href="http://example.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>云崖小筑</title>
   
-      
-      const activateDarkMode = () => {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      const activateLightMode = () => {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
 
-      btf.activateDarkMode = activateDarkMode
-      btf.activateLightMode = activateLightMode
 
-      const theme = saveToLocal.get('theme')
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">云崖小筑</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
     
-          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
-        
-      
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
-      }
-    
-      
-    const detectApple = () => {
-      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
-        document.documentElement.classList.add('apple')
-      }
-    }
-    detectApple()
-  
-    })()
-  </script><script>const GLOBAL_CONFIG = {
-  root: '/',
-  algolia: undefined,
-  localSearch: undefined,
-  translate: undefined,
-  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
-  copy: {
-    success: '复制成功',
-    error: '复制失败',
-    noSupport: '浏览器不支持'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '',
-  dateSuffix: {
-    just: '刚刚',
-    min: '分钟前',
-    hour: '小时前',
-    day: '天前',
-    month: '个月前'
-  },
-  copyright: undefined,
-  lightbox: 'null',
-  Snackbar: undefined,
-  infinitegrid: {
-    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
-    buttonText: '加载更多'
-  },
-  isPhotoFigcaption: false,
-  islazyloadPlugin: false,
-  isAnchor: false,
-  percent: {
-    toc: true,
-    rightside: false,
-  },
-  autoDarkmode: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: '云崖小筑',
-  isHighlightShrink: false,
-  isToc: false,
-  pageType: 'home'
-}</script><meta name="generator" content="Hexo 7.3.0"></head><body><script>window.paceOptions = {
-  restartOnPushState: false
-}
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
 
-btf.addGlobalFn('pjaxSend', () => {
-  Pace.restart()
-}, 'pace_restart')
 
-</script><link rel="stylesheet" href="/css/progress_bar.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/postimg/1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa fa-comments-o"></i><span> 分享</span></a></li><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li><li><a class="site-page child" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">云崖小筑</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fa fa-comments-o"></i><span> 分享</span></a></li><li><a class="site-page child" href="/photos/"><i class="fa-fw fa fa-camera-retro"></i><span> 相册</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li><li><a class="site-page child" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">云崖小筑</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/04/08/8-%E3%80%8A%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%8B%87%E6%B0%94%E3%80%8B%E7%AC%94%E8%AE%B0/" title="《幸福的勇气》笔记">《幸福的勇气》笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-04-07T23:54:20.000Z" title="发表于 2025-04-08 07:54:20">2025-04-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content"> 人生最大的选择————爱  “教的一方”要尊重“被教的一方”。根源在于“尊重人”。尊重就是实事求是的看待一个人并认识到其独特个性的能力。尊重就是要努力地使对方能成长和发展自己。不要试图改变或者操控眼前的他人。不附加任何条件地去认可“真实的那个人”。这就是最好的尊重。并且，假如有人能认可“真实的自己”，那个人也会因此获得巨大勇气。可以说尊重也是“鼓励”之源。尊重的重要一步就是：关心他人兴趣 用他人的眼睛去看，用他人的耳朵去听，用他人的心去感受。                                  阿德勒建议：假如我拥有和此人一样的心灵和人生情况会如何？  勇气会传染，尊重也会。  在判定自己言行以及他人言行时，思考其背后所隐藏的“目的”。这就是阿德勒心理学的基本主张。   某种程度上讲“改变意味着死亡”。人人都是“我”这个故事的编撰者，为了证明“现在的我”的正统性，其过去往往会被随意改写。   谈论“可恶的他人，可怜的自己”毫无意义，重要的是“以后怎么做？”...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/28/7-%E3%80%8A%E8%A2%AB%E8%AE%A8%E5%8E%8C%E7%9A%84%E5%8B%87%E6%B0%94%E3%80%8B%E7%AC%94%E8%AE%B0/" title="《被讨厌的勇气》笔记">《被讨厌的勇气》笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-03-28T14:17:26.000Z" title="发表于 2025-03-28 22:17:26">2025-03-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/28/6-%E3%80%8A%E5%8F%94%E6%9C%AC%E5%8D%8E%E7%9A%84%E6%B2%BB%E7%96%97%E3%80%8B%E7%AC%94%E8%AE%B0/" title="《叔本华的治疗》笔记">《叔本华的治疗》笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-03-28T12:44:29.000Z" title="发表于 2025-03-28 20:44:29">2025-03-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content">...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/28/5-%E5%A1%94%E6%B4%9B%E6%96%AF%E7%9A%84%E6%B3%95%E5%88%99/" title="塔洛斯的法则">塔洛斯的法则</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-03-28T12:25:04.000Z" title="发表于 2025-03-28 20:25:04">2025-03-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span></div><div class="content"> 我相信造物主，因为我从自己身上感受到了创造的力量，这种力量似乎与某种更强大的东西有关或是能够将之反映出来，那 种动力直通向宇宙本身固有的“存在与成为”。万物论的发现并没有削弱这种信仰。哦，不…….恰恰相反，我相信创造的语言皆是的是一位造物主，在他眼里，数学与音乐毫无分别，他的太阳和行星都是旋律的音符，他的星系则是交响乐。星云是一副画作，原子是一台机器，它们都是一幅杰作的组成部分。而如果我错了，并没有造物主怎么办？那么完成这幅杰作的责任就落在了我们的身上。  我们当中那些相信造物主的人，必定会对万物论的发现深表感激。它那不可否认的事实并没有挑战我们的信仰，而是将之净化。它让我们能够摒弃那个填补空缺的上帝，那个在绝望中想象出来的神明，然后就能开始面对真正的造物主–内在的、超越的、不可简化的造物主。我们可以抛开对国王和牧师之神的信仰，将我们的目光转向造星者，星系与粒子的诗人，他的语言便是创造的音乐，或许这是一个更困难的信仰，而且没那么令人安慰;但只要我们凝神注视，我们就会看到奇迹。   </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/28/4-%E6%8E%A5%E5%8F%97%E5%B9%B6%E7%83%AD%E7%88%B1%E4%BD%A0%E7%9A%84%E5%91%BD%E8%BF%90/" title="接受并热爱你的命运">接受并热爱你的命运</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-03-28T07:49:34.000Z" title="发表于 2025-03-28 15:49:34">2025-03-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%93%B2%E6%80%9D/">哲思</a></span></div><div class="content">接受并热爱你的命运 在《瞧，这个人》一书中，尼采写到:“所谓人类的伟大，我认为就是热爱命运：一个人不要除此之外的其他东西。未来不要，过去不要，永远都不要。不仅要忍受必然性，更不要隐瞒它-而要热爱它。在面对必然性时，所有理想主义都是谎言。”根据尼采的说法，你想要成为伟大的人，就要热爱你的命运。成为伟大的人意味着什么呢？我认为对于尼采而言，伟大意味着不奢求除自身之外的任何其它东西。伟大就是实现你的命运，是完全发挥你的潜能，是橡子变成橡树的过程，橡子蕴含着成为一颗强壮橡树的潜力，但只有它学会战胜自身，才能实现这种伟大。而尼采所说实现这种伟大的方式是“amor fati”。但amor fati是什么意思？在英语中，它被翻译为“热爱命运”。（LOVE Of...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/27/3-%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E4%BA%BA%E7%94%9F%E4%B9%8B%E6%85%B0%E8%97%89/" title="关于我的人生之慰藉">关于我的人生之慰藉</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-03-27T02:15:30.000Z" title="发表于 2025-03-27 10:15:30">2025-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%93%B2%E6%80%9D/">哲思</a></span></div><div class="content">2024&#x2F;10   关于我的人生之慰藉人生充满各种苦难与折磨，若是不找寻点慰藉，那确实有点过于难捱了。因此，我尝试撰写一下我的人生之慰藉，以供参考。 首先便是苏轼有云:”寄蜉蝣于天地，渺沧海之一粟”。（虽然是客曰）若是常人，听到这般说辞，想必会觉得人生渺小，毫无意义云云。但是于我而言却颇有一番不一样的深意。虽然相较于宇宙，嘿嘿，人生可当真渺小了，可也恰因如此，我们的人生却不必承受什么重负，一切随心，无拘无束，不也十分快哉？ 其次便是人终有一死。生命是一种“有永久解答的暂时状态”。（temporary condition with a permanent...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/24/2-%E8%AE%BA%E5%87%BA%E7%94%9F/" title="论出生">论出生</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-03-24T10:42:06.000Z" title="发表于 2025-03-24 18:42:06">2025-03-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%93%B2%E6%80%9D/">哲思</a></span></div><div class="content">2025&#x2F;3&#x2F;16  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/03/24/1-%E6%B5%8B%E8%AF%95/" title="测试">测试</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-03-24T08:57:25.495Z" title="发表于 2025-03-24 16:57:25">2025-03-24</time></span></div><div class="content">这是我的第一篇个人博客 快捷入门创建一个新帖子1$ hexo new &quot;My New Post&quot;  更多信息: 写作 运行服务1$ hexo server  更多信息: 服务 生成静态文件1$ hexo generate  更多信息: 生成网站静态文件到默认设置的 public 文件夹 Deploy to remote sites1$ hexo deploy  更多信息: 自动生成网站静态文件，并部署到设定的仓库 </div></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/postimg/1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Kms271</div><div class="author-info-description">行到水穷处，坐看云起时</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/04/08/8-%E3%80%8A%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%8B%87%E6%B0%94%E3%80%8B%E7%AC%94%E8%AE%B0/" title="《幸福的勇气》笔记">《幸福的勇气》笔记</a><time datetime="2025-04-07T23:54:20.000Z" title="发表于 2025-04-08 07:54:20">2025-04-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/28/7-%E3%80%8A%E8%A2%AB%E8%AE%A8%E5%8E%8C%E7%9A%84%E5%8B%87%E6%B0%94%E3%80%8B%E7%AC%94%E8%AE%B0/" title="《被讨厌的勇气》笔记">《被讨厌的勇气》笔记</a><time datetime="2025-03-28T14:17:26.000Z" title="发表于 2025-03-28 22:17:26">2025-03-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/28/6-%E3%80%8A%E5%8F%94%E6%9C%AC%E5%8D%8E%E7%9A%84%E6%B2%BB%E7%96%97%E3%80%8B%E7%AC%94%E8%AE%B0/" title="《叔本华的治疗》笔记">《叔本华的治疗》笔记</a><time datetime="2025-03-28T12:44:29.000Z" title="发表于 2025-03-28 20:44:29">2025-03-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/28/5-%E5%A1%94%E6%B4%9B%E6%96%AF%E7%9A%84%E6%B3%95%E5%88%99/" title="塔洛斯的法则">塔洛斯的法则</a><time datetime="2025-03-28T12:25:04.000Z" title="发表于 2025-03-28 20:25:04">2025-03-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/28/4-%E6%8E%A5%E5%8F%97%E5%B9%B6%E7%83%AD%E7%88%B1%E4%BD%A0%E7%9A%84%E5%91%BD%E8%BF%90/" title="接受并热爱你的命运">接受并热爱你的命运</a><time datetime="2025-03-28T07:49:34.000Z" title="发表于 2025-03-28 15:49:34">2025-03-28</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
-            <i class="fas fa-folder-open"></i>
-            <span>分类</span>
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
             
-          </div>
-          <ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%93%B2%E6%80%9D/"><span class="card-category-list-name">哲思</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">笔记</span><span class="card-category-list-count">4</span></a></li>
-          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 1.3em; color: #99a1ac">生活</a> <a href="/tags/%E5%91%BD%E8%BF%90/" style="font-size: 1.1em; color: #999">命运</a> <a href="/tags/%E6%AD%BB%E4%BA%A1/" style="font-size: 1.3em; color: #99a1ac">死亡</a> <a href="/tags/%E5%8F%8D%E7%94%9F%E8%82%B2%E4%B8%BB%E4%B9%89/" style="font-size: 1.1em; color: #999">反生育主义</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 1.1em; color: #999">随笔</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 1.3em; color: #99a1ac">思考</a> <a href="/tags/%E5%93%B2%E6%80%9D/" style="font-size: 1.5em; color: #99a9bf">哲思</a></div></div><div class="card-widget card-archives">
-    <div class="item-headline">
-      <i class="fas fa-archive"></i>
-      <span>归档</span>
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/04/08/11-%E3%80%8A%E4%BD%A0%E7%BB%8F%E5%8E%86%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F%E5%85%B3%E4%BA%8E%E5%88%9B%E4%BC%A4%E3%80%81%E7%96%97%E6%84%88%E5%92%8C%E5%A4%8D%E5%8E%9F%E5%8A%9B%E7%9A%84%E5%AF%B9%E8%AF%9D%E3%80%8B%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Kms271">
+      <meta itemprop="description" content="行到水穷处，坐看云起时">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云崖小筑">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/04/08/11-%E3%80%8A%E4%BD%A0%E7%BB%8F%E5%8E%86%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F%E5%85%B3%E4%BA%8E%E5%88%9B%E4%BC%A4%E3%80%81%E7%96%97%E6%84%88%E5%92%8C%E5%A4%8D%E5%8E%9F%E5%8A%9B%E7%9A%84%E5%AF%B9%E8%AF%9D%E3%80%8B%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">《你经历了什么？关于创伤、疗愈和复原力的对话》笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-04-08 20:47:34 / 修改时间：21:17:26" itemprop="dateCreated datePublished" datetime="2025-04-08T20:47:34+08:00">2025-04-08</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><p><em><strong>“当你发现自己对某种东西上了瘾，不要感到惭愧，你可以为之而喜悦。你终于找到了自己生存于世需要被疗愈的部分。而当你真正面对并解决你的成瘾问题时，你就是在完成最伟大的心灵任务。”</strong></em></p>
+</li>
+<li><p>装满我们的奖赏桶，而人际关系是最健康的方式。</p>
+</li>
+<li><p>“归属感和被爱，是人类体验的核心。所有人都有一个共性，那就是希望被认可、被理解，希望自己真实的一面被接受和肯定。</p>
+</li>
+<li><p>我们大脑的发育是我们成长环境的反映。你爱别人的方式，源自你被爱的方式。</p>
+</li>
+<li><p>如果你从没有被爱过，负责爱的神经网络就不发达。通过使用和练习，这些能力就会出现。我们要多给予爱，让那些没有被爱过的人也能充满爱意。</p>
+</li>
+<li><p>对于婴儿来说，爱就是行动，是成年人所提供的关注、回应和细心护理。</p>
+</li>
+<li><p>心理脆弱的很大一部分根源来自混乱动荡的幼年生活，它会影响应激反应系统的发育，使其变得敏感。</p>
+</li>
+<li><p>当你重新审视你的过去时，请记住，无论发生过什么事，你活着，你存在，因此你就是有价值的。请记住希望永在。“我们会好起来的。慢慢地，一步一步，在某个瞬间实现。”</p>
+</li>
+<li><p>比起一个人的童年逆境经历，他的关系健康情况——他与家庭、集体和社会的连接——能够更好地预测他的心理健康状况。一个人和外界的连接具有与逆境抗衡的力量。·回忆痛苦经历，倾诉痛苦，你只想和好朋友谈一谈那件事的某些方面，也许只需要两三分钟。当你感觉太痛苦时，你会想要置身事外，想要转移注意力，也许你想以后再谈这件事。这才是真正能够起到疗愈作用的“剂量”。只需片刻。他人全身心的陪伴和倾听，时间虽短，但有力量。“在谈到一些痛苦经历的时候改变话题，过一段时间又绕回到这件事上。这是疗愈体验的本质。当别人真正地“看到”你，“听到”你的时候，他们就是在帮你进行调节。</p>
+</li>
+<li><p>如果我们知道有五千万儿童遭受过创伤，那就意味着有无数的成年人在生活、工作和人际关系中背负着伤痛，又再传递给他们的孩子。而这些成年人甚至可能完全没有意识到他们究竟怎么了。照顾者也曾经是孩子，曾经被他们的照顾者所影响。创伤的影响深远而且广泛，会跨越几代人和不同人群。</p>
+</li>
+<li><p>你自己的经历，你重复的祖先的经历，都会影响你的思维、感觉和行为方式。它们是你的健康的重要决定因素。意识到这一点可以帮助我们记住，我们现在所做的一切将在未来产生回响。我们的行为很重要，我们正在影响着下一代人。</p>
+</li>
+<li><p>人的发展性创伤会破坏我们构建和维持人际关系的能力。如果我们在披养育的过程中遭遇创伤或被忽视，我们读取和回应他人的神经网络很有可能会发生改变。当这种“依态”（指个体与主要抚养者发展出的一种特殊的、积极的情感纽带，也指个体寻求并企图与另一个个体在身体和情感上保持亲密联系的倾向。）能力受损时，我们就会在友谊、校园生活、就业、亲密关系和家庭方面出现问题，甚至有可能把上一代传下来的养育模式一代代传承下去。</p>
+</li>
+<li><p><strong>社会感染</strong>指社会情绪的传递过程，具体指通过语言、表情、动作和其他方式引起他人相同的情绪和行动。其特征是自发性、无强迫性、无意识性，感染者与被感染者可以相互转变，在群体内会产生循环感染，从而引起更强烈的情绪爆发。</p>
+</li>
+<li><p>要和任何人进行理性和成功的沟通，你必须确保他们处在调节良好的状态，确保他们能感受到与你的连接，然后再尝试说服他们。</p>
+</li>
+<li><p>为什么那些已经成为受创伤者的人，会一再被虐待关系吸引？<br>因为所有人都会被熟悉的事物吸引，即使这个熟悉的事物是不健康的，甚至是具有破坏性的。对有些人来说，被拒绝或遭受恶劣的对待才能验证他的观念，这是他存在的底层架构，这让他感到舒服。正如心理学家维吉尼亚·萨提亚所言：与不确定的痛苦相比，确定的痛苦让我们感觉更好些。</p>
+</li>
+<li><p>我们无法给予自己根本没有的东西。</p>
+</li>
+<li><p>关系是疗愈的关键。被忽视和遭受创伤有同样的危害性。早期忽视干扰了儿童正常发育所必需的刺激。<br>最常见的忽视形式是混乱，无规律的养育。<br>分裂式忽视：大脑发育的许多方面都是正常的，但有一个或多个系统却没能得到所需的体验“如果要拥有健康的关系，关键是在人生的第一年建立安全，稳定的养育关系。这可以让你得到充分的重复体验，以建立基本的关系架构。这是健康关系的基础，它将使你能够继续发展健康的关系连接。<br>如果侍在婴儿身边，又不去关注他们，这会对他们的健康发育产生有害的影响。人类是社会性动物，归属感是很重要的一环。这种归属感来自其他人那里得到的“你很重要”的信号。</p>
+</li>
+<li><p>心不在焉、缺乏交流的互动无法为一个有爱的人打造成长基础。恰恰相反，它会培养出个情感饥渴、内心贫乏的人。这样的人渴望归属感，却没有相应的神经生理基础让他能真正找到他所需要的东西。冷漠的养育方式会激发对爱无法抑制的渴望。如果你没有被爱过，你就无法去爱。</p>
+</li>
+<li><p>心智游移(mind-Wandering):做白日梦。大多数人只能在15秒内完全专注于某个人和他所说的话，然后意识就会游移。</p>
+</li>
+<li><p>自残行为：解离反应会释放阿片类物质。如果一个解离反应并不敏感的人割伤自己，他的身体会释放一些阿片类物质，让他能够忍受疼痛。这种释放量会相当小，与伤口大小成正比。而一个有敏感解离反应（反应强度强烈）的人割伤自己时，他的身体会释放大量的阿片类物质。这几乎就像吃了一点海洛因或吗啡。</p>
+</li>
+<li><p>每个想法和每个行动之前都有一个意图，而你所经历的所有事的结果都是由你的意图来决定的。在做每一件事之前问自己：“我这样做的意图是什么？”设立界限，做自己想做的事情，因为这样对我来说才是真实的。</p>
+</li>
+<li><p>对任何人来说，最不稳定的事情就是他们的核心观念受到挑战。所以受过创伤的人会一再被虐待关系吸引。这让他们的世界观得到了确认。尽管结果是混乱和冲突，但他又回到了原来熟悉的界面，这让他们感到舒适。</p>
+</li>
+<li><p>心理治疗不是清除创伤的体验。无论过去的体验在大脑中产生了什么，这些连接都一直存在。心理治疗更多的是建立新的连接，创建新的，更健康的默认路径。用新的路径取代旧有的路径。</p>
+</li>
+<li><p>在遭遇创伤之后，最难理解的是，没有任何东西和任何人可以将痛苦带走。而消除痛苦是每个人都极力想做的事情。面对被摧毁的生活，我们不可能感受不到痛苦。于是我们试图消除或否定他人的痛苦，转移注意力，这有助于我们的自我调节。</p>
+</li>
+<li><p>这个过程——离开安全地带，探索新事物，回到安全地带，过程——对幼儿和儿童来说将持续，成千上万次。通过这些小挑战，他们构建了在面对意外压力时的复原力。一切发展都与接触新鲜事物有关，这样我们的应激反应将会被激活。有了安全稳定的关系基础，成千上万次适度的压力刺激将有助于激发灵活的应激反应能力。</p>
+</li>
+<li><p>在一个可以感受到被爱和安全的环境中，孩子会选择离开他们的舒适区。安全和熟悉是“无聊”的。一个处于安全和稳定中的孩子，一定是一个好奇的孩子—他们想要探索新事物。一个感到不安全的孩子就不会想去探索。这是健康发展的一个基本规则。安全感和稳定感为健康成长奠定了基础。</p>
+</li>
+<li><p>当一个人情绪失控时，语言就很难起作用了，如果可以安静地陪伴，那是最好的。如果使用语言，最好是复述他们所说的内容。这叫反馈或倾听。你无法让别人摆脱消极情绪，但你可以成为一块海绵，吸收他们的情绪。如果你一直保持自我调节，最终他们会“接住”你的平静。</p>
+</li>
+<li><p>在帮助失调的人时，不应说：“嘿，告诉我你在想什么。”在谈论困扰他的事情时，你需要让他来掌握什么时候说和怎么说。如果你给他这种控制权并让他感到安全，在他自己能够掌握的时间里，他会更有倾诉的动力。</p>
+</li>
+<li><p>当我们突然情绪爆发、失控或突变时的一种可能的解释：是当前发生的一些事情触发了大脑中的一个创伤记忆。大脑的低层级、非理性的部分会首先做出反应，立刻启动应激反应系统，关闭大脑的理性部分。因此，这种爆发实际上是大脑中一些高度组织化过程的结果。</p>
+</li>
+<li><p>信念和价值观并不总是在驱动我们的行为。这些信念和价值存储在我们大脑的最高层级一大脑皮质。而有些行为会受到更早大脑结构的调控，这些调控比理性行动更快，更隐蔽，更不可控。</p>
+</li>
+<li><p>我们这个社会充满关系贫困。在我们生活的环境中，我们真正“看到”的人越来越少。即使我们和别人接触，彼此交谈，我们也没有真正地在倾听对方，没有真正和对方在一起。这种与他人情感联系的中断使我们变得更加脆弱。</p>
+</li>
+<li><p>我们的社会结构，使我们很难有归属感。人际关系变得脆弱，就会感到空虚。大脑会不断扫描社会环境所发出的信号，让你知道自己是否有归属感。当一个人得到归属感信号一—这些信号有很多是潜意识的一他的应激反应系统就会平静下来，告诉自己是安全的。他会感受到调节和奖赏。</p>
+</li>
+<li><p>如果生活在市区，我们可能每天都会看到成百上千的陌生人，而大脑必须不断监测这成百上千的人：他们是朋友还是敌人？会帮助我还是伤害我？这会加重大脑的负担，消耗情绪带宽。生活在都市环境中的人早已学会无视他人，互不来往。这其实是一种自我保护的方式。新奇事物不断轰炸，我们却缺乏能够与之抗衡的关系连接。焦虑因此而产生。</p>
+</li>
+<li><p>我们必须先照顾好自己，这样我们才有能力给予。帮助他人改变的最主要的工具就是你自己。人与人之间的关系是改变的关键。</p>
+</li>
+</ul>
+
       
     </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
   
-    <ul class="card-archive-list">
+  
+  
+
       
-        <li class="card-archive-list-item">
-          <a class="card-archive-list-link" href="/archives/2025/04/">
-            <span class="card-archive-list-date">
-              四月 2025
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/04/08/8-%E3%80%8A%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%8B%87%E6%B0%94%E3%80%8B%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Kms271">
+      <meta itemprop="description" content="行到水穷处，坐看云起时">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云崖小筑">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/04/08/8-%E3%80%8A%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%8B%87%E6%B0%94%E3%80%8B%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">《幸福的勇气》笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-04-08 07:54:20 / 修改时间：08:20:19" itemprop="dateCreated datePublished" datetime="2025-04-08T07:54:20+08:00">2025-04-08</time>
             </span>
-            <span class="card-archive-list-count">1</span>
-          </a>
-        </li>
-      
-        <li class="card-archive-list-item">
-          <a class="card-archive-list-link" href="/archives/2025/03/">
-            <span class="card-archive-list-date">
-              三月 2025
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+                </span>
             </span>
-            <span class="card-archive-list-count">7</span>
-          </a>
-        </li>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-    </ul>
-  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">8</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-04-08T00:20:43.091Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By Kms271</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+          <ul>
+<li><p>人生最大的选择————爱</p>
+</li>
+<li><p>“教的一方”要尊重“被教的一方”。根源在于“尊重人”。<br>尊重就是实事求是的看待一个人并认识到其独特个性的能力。<br>尊重就是要努力地使对方能成长和发展自己。<br>不要试图改变或者操控眼前的他人。不附加任何条件地去认可“真实的那个人”。这就是最好的尊重。并且，假如有人能认可“真实的自己”，那个人也会因此获得巨大勇气。可以说尊重也是“鼓励”之源。<br><em><strong>尊重的重要一步就是：关心他人兴趣</strong></em> 用他人的眼睛去看，用他人的耳朵去听，用他人的心去感受。<br>                                  阿德勒建议：假如我拥有和此人一样的心灵和人生情况会如何？</p>
+</li>
+<li><p>勇气会传染，尊重也会。</p>
+</li>
+<li><p>在判定自己言行以及他人言行时，思考其背后所隐藏的“目的”。这就是阿德勒心理学的基本主张。 </p>
+</li>
+<li><p>某种程度上讲“改变意味着死亡”。人人都是“我”这个故事的编撰者，为了证明“现在的我”的正统性，其过去往往会被随意改写。 </p>
+</li>
+<li><p>谈论“可恶的他人，可怜的自己”毫无意义，重要的是“以后怎么做？” </p>
+</li>
+<li><p>认同根本没有尽头。获得他人的表扬和认同，借此也许可以体会到瞬间的“价值”；但是，如此获得喜悦终归是依赖于外界。这样的人就被置于“依存”的地位，过着永远索求、永不满足的生活。唯有一个办法——不去寻求他人的认同，<em><strong>按照自己的意思自我认同</strong></em>。<br>让他人来决定“我”的价值，这是依存。另一方面，“我”的价值由自己来决定，这叫“自我”。幸福生活在哪里，答案很明确了。决定你自身价值的不是别人。<br>***不要从“与他人不同”方面寻求价值，而是从“保持自我”方面寻求价值，这才是真正的个性。不认可“真正的自我”，一味地与他人进行比较，盲目地突出不同，这是一种自欺欺人的生活方式。 ***</p>
+</li>
+<li><p>问题行为是在针对“你”。阿德勒心理学将人的一切言行都放在人际关系中进行思考，一切言行都有其针对的“对象”。 </p>
+</li>
+<li><p>想要通过拯救他人使自己获救，通过扮演一种救世主的角色来体会到自己的价值，这是无法消除自卑感的人常常会陷入的优越情结的一种形态，一般被称为“弥赛亚情结”。</p>
+</li>
+<li><p>不幸者提供的救助无法脱离自我满足的范畴，根本不可能让任何人获得幸福。 </p>
+</li>
+<li><p>人生课题：工作、交友、爱。 </p>
+</li>
+<li><p>我们在交友的时候，会学着用他人的眼睛去看，用他人的耳朵去听，用他人的心去感受。<br>只有信赖自己才能信赖他人。 </p>
+</li>
+<li><p>工作关系是“信任”关系，而交友关系是信赖关系。<br>决定人价值的不是“从事什么样的工作”，而是“以什么样的态度致力”于自己的工作。<br>最危险的就是提出何为善何为恶之类并不明朗的“正义”。醉心于正义的人无法认同异于自己的价值观，最终往往会发展为“正义的干涉”。而这种干涉的结果就是自由被剥夺、整齐划一的乏味社会。你从事什么工作都可以，而别人从事什么工作也都没有关系。 </p>
+</li>
+<li><p>某种程度上，尊重和信赖同义。能否“信赖”他人与能否尊重他人紧密相关。<strong>无论什么样的对象，都可以去“尊重”去“信赖”。因为这并非由环境或对象所左右，而是取决于你自己的决心。</strong> </p>
+</li>
+<li><p>因为想要获得别人的信赖，所以主动信赖别人。 </p>
+</li>
+<li><p>如果不能爱自己也就无法爱他人，如果不能信赖自己也就无法信赖他人。 </p>
+</li>
+<li><p>以自我为中心的人并不是因为“喜欢自己”才只关注自己。事实恰恰相反，正因为无法接纳真实的自己，内心充满不安，所以才只关心自己。 </p>
+</li>
+<li><p><em><strong>正因为我们人类是无法相互理解的存在，所以才只能选择信赖。</strong></em> </p>
+</li>
+<li><p>特蕾莎修女被问到“为了世界和平，我们应该做些什么？”的时候，她这样回答，“回家之后请善待家人。”阿德勒的共同体感觉也是一样。不是为了世界和平做什么，而是首先信赖眼前的人，与眼前的人交朋友。这样在日常生活中积累起来的信赖总有一日足以平息国家间的争斗。 </p>
+</li>
+<li><p>阿德勒认为：“爱不是纯粹或自然的功能。对于人来说的爱，既不是由命运决定的事情，又不是自的事情。我们并不是“被动坠入”爱。爱需要在意志力的作用下从无到有慢慢培发养起来，所以爱的课题才非常困难。 </p>
+</li>
+<li><p>“被动坠入的爱”就好比是被物欲迷住。只是想要获得、拥有、征服它而已。本质上和物欲一样。 </p>
+</li>
+<li><p>爱是“由两个人共同完成的课题”<br>我们通过追求“我的幸福”建立分工关系，通过追求“你的幸福”建立交友关系，而爱则是建立不可分割的“我们的幸福”。 </p>
+</li>
+<li><p>当懂得真正的爱的时候，“我”这一人生主语就变成了“我们”。既不是利己心又不是利他心，而是在全新的准则下生活。为了获得幸福生活，就应该让“自我”消失。<br>爱就是从“自我”中解放出来。<br>很多大人也像孩童般试图以自己的脆弱或不幸、伤痛、不得志以及精神创伤为“武器”来控制他人，想要让他人担心、束缚他人言行、支配他人。 </p>
+</li>
+<li><p><em><strong>自立就是脱离自我中心性。我们不能总是君临“世界中心”，必须与世界和解，明白自己是世界的一部分。我们通过爱从“自我”中解放出来，实现自立，在真正意义上接纳世界。懂得爱之后，人生的主语就会变成“我们”，这是人生新的开始。仅仅开始于两个人的“我们”很快就会扩展到整个共同体乃至整个人类。这就是共同体感觉。</strong></em> </p>
+</li>
+<li><p>“被爱的生活方式”完全是自我中心式的生活方式，它一直在摸索如何集中他人的关注、如何站在“世界中心”。 </p>
+</li>
+<li><p>自立既不是经济方面的问题也不是就业方面的问题，而是对待人生的态度、生活方式的问题。而我们通过爱他人能渐渐成熟起来。 </p>
+</li>
+<li><p>主动去爱根本不需要担保。不管对方如何看自己，只是去爱，投身爱中。人为爱寻求担保，是因为无法爱自己，做不到尊重自己、信赖自己。因此，人就会认为在爱的关系中“肯定会受伤”或“一定会伤心”，认为不可能有人爱这样的自己，所以才想寻求担保。 </p>
+</li>
+<li><p>爱是你的课题，但是，对方如何回应你的爱，那是他人的课题，你根本无法掌控。你能做的唯有课题分离，自己先去爱。 </p>
+</li>
+<li><p>无论是恋爱还是人生中其他一切事情，阿德勒根本不认同“命中注定的人”。 </p>
+</li>
+<li><p>为什么很多人在恋爱中追求“命中注定的人”呢？为什么对结婚对象抱着浪漫的幻想呢？关于其中的理由，阿德勒认为是“为了排除一切候选人”。明明值得爱的人就在眼前，但却找各种理由退却，说什么“不是这个人”，并自欺欺人地认为“一定还有更理想、更完美、更有缘分的人”根本不想进一步发展关系，亲手排除一切候选人。就这样，通过设定一个过大的、根本不存在巨理想来回避与现实的人交往，这才是感叹“没有邂逅”的人的真实面目。并且活在幻想之你认为幸福会不请自来，常常在想：“虽然现在幸福还没有到来，但只要遇到命中注定的，一切都会好起来。”</p>
+</li>
+</ul>
+<p>爱即“决断”！！！<br>结婚不是选择“对象”，而是选择自己的生活方式。很多人都是感觉与某人的相遇是“命运安排”，然后凭着直觉决定结婚。但这并不是冥冥之中被安排好的命运，而仅仅是自己决定“相信是命运的安排”。<br>弗洛姆说：“爱某个人并非单单出于激烈感情，这是一种决心、决断、约定。”<br>相遇的形式如何都无所谓。如果下定决心从此建立真正的爱，面对“由两个人完成的课题”，那么，我们与任何人之间都可能产生爱。<br>但是，当我们回顾与伴侣一起走过来的漫长岁月时，往往会感觉是“命运的安排”。这里所说的命运并不是冥冥中被安排好的东西，也不是偶然降临的东西，而是由两个人努力慢慢构建起来的东西。<br>青年：……什么意思？<br>哲人：你已经明白了吧……命运靠自己的手创造出来。<br>青年：……<br>哲人：我们绝不可以成为命运的仆人，必须做命运的主人。不是去追求命中注定的人，而是建立起可以称得上是命运的关系。<br>青年：但是，具体怎么做呢？！<br>哲人：<strong>跳舞</strong>。不去想未知的将来也不去考虑根本不存在的命运，只是与眼前的伴侣一起<strong>舞动“现在”</strong>。<br>阿德勒认为舞蹈是“由两个人共同完成的游戏”，他也广泛地向孩子们推荐。爱情和婚姻正如两个人一起跳的舞蹈，不去想将会走向何处，牵着对方的手，关注今天的幸福与此时此刻的感动，不停旋转不停律动。你们跳过来的长长的舞蹈轨迹，人们就会称其为“命运”。<br>青年：爱情和婚姻是由两个人跳动的舞蹈……<br>哲人：你现在只是站在人生这一舞场的角落里旁观着跳舞的人们。感叹“不会有人愿意与这样的自己跳舞”，并在内心深处焦急等待着“命中注定的人向自己伸出邀请之手”。就这样，咬紧牙关拼命守护着自己，以免更加伤心更加讨厌自己。<br>你应该做的只有一件事：牵起身边人的手，尽情尽力地去跳舞。命运由此开始。 </p>
+<ul>
+<li><p>***弗洛姆说；“爱是一种信念行为，只有一点点信念的人就只能爱一点点。 ***</p>
+</li>
+<li><p>我们所拥有的时间有限，那么所有人际关系的成立都是以“分别”为前提。如果是这样，我们能做的事情也许就只有一件。在所有的相遇与人际关系中，不断朝着“最佳分别”努力。唯有如此。<strong>开始去爱吧。然后，与爱的人一起不断朝着“最佳分别”努力。</strong></p>
+</li>
+<li><p>正因我们看不清未来，所以才能成为命运的主人。</p>
+</li>
+</ul>
+<p>1.24<br>实际上在恋爱中我就有过想要控制他人的情形，也就是通过情绪或行为暗中控制以此来干涉对方的人生。我一直以为自己豁达大度，能尊重他人。但实际上很多情况下我的表现就显露出自私、自卑和没有安全感。有时候恋人的某些举动不合我意，我便会用消极情绪和摆脸色使对方折服。我不是因为恋人做出不合我心意的举动才这么做的，而是因为想用这种方法让恋人屈服、顺从我才这么做的。毫无疑问这么做是错误的，首先是这种做法没有做到课题分离，我妄想去干涉别人的人生课题，这本身就是不现实的。其次，这种做法对恋人是一种不尊重，试图支配他人说明我根本做不到自立，即没法脱离自我中心性。在爱情中奢望像幼儿时那样被无微不至的关怀是不可能的，那说明还是渴望用恋人来满足自己获得关注的需求。真正的爱是要“主动的爱”。而最关键的一点在于：信赖。信赖，就是无条件地信任恋人。但更深一层，是对毫无保留地信任恋人的自己的信任。只有信赖自己才能信赖他人。而成熟的主动的爱要求我们毫无保留地信赖，因为怀疑和猜忌是难以开出爱的土壤的。而这就要求我们先去毫无保留的爱和信赖，因为我们如何爱这是我们的课题，对方如何爱是对方的课题。从现在开始，做到尊重（课题分离，努力使对方成长和发展自己）和信赖（无需担保，一次信仰之跃）。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/28/7-%E3%80%8A%E8%A2%AB%E8%AE%A8%E5%8E%8C%E7%9A%84%E5%8B%87%E6%B0%94%E3%80%8B%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Kms271">
+      <meta itemprop="description" content="行到水穷处，坐看云起时">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云崖小筑">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/28/7-%E3%80%8A%E8%A2%AB%E8%AE%A8%E5%8E%8C%E7%9A%84%E5%8B%87%E6%B0%94%E3%80%8B%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">《被讨厌的勇气》笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-28 22:17:26" itemprop="dateCreated datePublished" datetime="2025-03-28T22:17:26+08:00">2025-03-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-04-08 07:52:42" itemprop="dateModified" datetime="2025-04-08T07:52:42+08:00">2025-04-08</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><p>人并不是住在客观的世界，而是住在自己营造的主观世界里。</p>
+</li>
+<li><p>任何经历本身并不是成功或者失败的原因。我们并非因为自身经历中的刺激————所谓的心理创伤————而痛苦，事实上我们会从经历中发现符合自己目的的因素。***决定我们自身的不是过去的经历，而是我们自己赋予经历的意义。***我们给过去的经历“赋予了什么样的意义”，这直接决定了我们的生活。人生不是由别人赋予的，而是由自己选择的，是自己选择了自己如何生活。</p>
+</li>
+<li><p>重要的不是被给予了什么，而是如何去利用被给予的东西。</p>
+</li>
+<li><p>谁都无法选择自己的出身。出生在什么样的国际，什么样的时代，有什么样的父母，这一切都不是自己的选择。而且，这些都具有极大的影响力，你也许会心有不满，也许会对别人的出身心生羡慕。但是，事情不可仅止于此。问题不在于过去而在于现在，现在你了解了生活方式。如果是这样的话，接下来的行为就是你自己的责任了。无论是继续选择与之前一样的生活方式还是重新选择新的生活方式，那都在于你自己。</p>
+</li>
+<li><p>之所以感觉孤独并不是因为只有你自己一个人，感觉自己被周围的他人、社会和共同体所疏远才会孤独。我们要想体会孤独也需要有他人的存在。</p>
+</li>
+<li><p>困扰我们的自卑感不是“客观性的事实”而是“主观性的解释”</p>
+</li>
+<li><p>我们无法改变客观事实，但可以任意改变主观解释。并且，我们都活在主观世界中。</p>
+</li>
+<li><p>价值必须建立在社会意义之上。</p>
+</li>
+<li><p>不想成功，简单地说就是害怕向前迈进或者是不想真正地努力。不愿意为了改变自我而牺牲目前所享受的乐趣————比如玩乐或休闲时间。也就是拿不出改变生活方式的“勇气”，即使有些不满或者不自由，也还是更愿意维持现状。</p>
+</li>
+<li><p><em><strong>健全的自卑感不是来自与别人的比较，而是来自与“理想的自己”的比较。</strong></em></p>
+</li>
+<li><p>无论是走在前面还是走在后面都没有关系，我们都走在一个并不存在纵轴的水平面上，我们不断向前迈进并不是为了与谁竞争。价值在于不断超越自我。</p>
+</li>
+<li><p>当一个人想要做自己的时候，竞争势必会成为障碍。</p>
+</li>
+<li><p>“无法真心祝福过得幸福的他人”，那就是因为站在竞争的角度来考虑人际关系，把他人的幸福看作“我的失败”，所以才无法给予祝福。</p>
+<p>但是，一旦从竞争的怪圈中解放出来，就再没有必要战胜任何人了，也就能够摆脱“或许会输”的恐惧心理了，变得能够真心祝福他人的幸福并能够为他人的幸福做出积极的贡献。</p>
+</li>
+<li><p>行为方面的目标有以下两点：1.自立（自我接纳）  2.与社会和谐共处（他者信赖，他者贡献）</p>
+<p>而且，支撑这种行为的心理方面的目标也有以下两点：1.“我有能力”的意识。  2.“人人都是我的伙伴”的意识。</p>
+</li>
+<li><p>人生的三大课题：交友课题、工作课题、爱的课题</p>
+</li>
+<li><p>无论多么困难的关系都不可以选择逃避，必须勇敢去面对。即使最终发展成用剪刀剪断，也要首先选择面对。最不可取的就是在“这样”的状态下止步不前。</p>
+</li>
+<li><p>“人生谎言”教我们学会逃避。</p>
+<p>假设你讨厌A这个人，说是因为A身上有让人无法容忍的缺点。但是，那并不是因为无法容忍A的缺点才讨厌他，而是你先有“要讨厌A”这个目的，之后才找出了符合这个目的的缺点。而这么做是为了逃避与A之间的人际关系。</p>
+<p>如果想一想处于恋爱关系的人分手的时候情况就容易理解了。在恋爱或夫妻关系中，过了某个时期之后，有时候对方的任何言行都会让你生气。吃饭的方式让你不满意，在房间里的散漫姿态令你生厌，甚至连对方睡眠时的呼吸声都让你生气，尽管几个月前还不是这样。这是因为那个人已经下定决心要找机会“结束这种关系”，继而正在搜集结束关系的材料，所以才会那样感觉。对方其实没有任何改变，只是自己的“目的”变了而已。</p>
+<p>人就是这么任性而自私的生物，一旦产生这种想法，无论怎样都能发现对方的缺点。即使对方是圣人君子一样的人物，也能够轻而易举地找到对方值得讨厌的理由。正因如此，世界才随时可能变成危险的所在，人们也就有可能把所有他人都看成“敌人”。</p>
+</li>
+<li><p>决定你的生活方式（人生状态）的不是其他任何人，而是你自己这一事实。</p>
+</li>
+<li><p>自由就是不再寻求认可。根本没必要被别人认可，也不要去寻求认可。我们“并不是为了满足别人的期待而活着”。</p>
+</li>
+<li><p>倘若自己都不为自己活出自己的人生，那还有谁会为自己而活呢？</p>
+</li>
+<li><p>把自己和别人的“人生课题”分开来。基本上，一切人际关系矛盾都起因于对别人的课题妄加干涉或者自己的课题被别人妄加干涉。只要能够进行课题分离，人际关系就会发生巨大改变。</p>
+<p>辨别究竟是谁的人生课题的方法非常简单，只要考虑一下“某种选择所带来的结果最终要由谁承担？”</p>
+<p>但并不是要采取放任的态度。“可以把马带到水边，但不能强迫其喝水。”</p>
+</li>
+<li><p>关于自己的人生你能够做的就只有“选择自己认为最好的道路”。另一方面，别人如何评价你的选择，那是别人的课题，你根本无法左右。</p>
+</li>
+<li><p>首先要思考一下“这是谁的课题”。然后进行课题分离————哪些是自己的课题，哪些是别人的课题，要冷静地划清界限。</p>
+<p>而且，不去干涉别人的课题，也不让别人干涉自己的课题。</p>
+</li>
+<li><p>“回报思想”与课题分离相悖。我们既不可以寻求回报，也不可以受其束缚。</p>
+</li>
+<li><p>按照别人的期待生活会别叫轻松，因为那是把自己的人生托付给了别人，比如走在父母铺好的轨道上。尽管这里也会有各种不满，但只要还在轨道上走着就不会迷路。但是，如果要决定自己的道路，那就有可能会迷路，甚至也会面临着“该如何生存”这样的难题。</p>
+</li>
+<li><p>为了满足别人的期望而活以及把自己的人生托付给别人，这是一种对自己撒谎也不断对周围人撒谎的生活方式。</p>
+</li>
+<li><p>人际关系之卡总是掌握在自己手中。</p>
+</li>
+<li><p>把改变自己当成操纵他人的手段是一种极其错误的想法。</p>
+</li>
+<li><p>课题分离是人际关系的出发点，人际关系的“终点”在于 <em><strong>共同体感觉</strong></em>（把他人看成是朋友，并在其中感受到有自己的位置，阿德勒心理学争议最大的理念）。</p>
+</li>
+<li><p>把对自己的执着（self interest）变成对他人的关心（social interest）<br>不能进行“课题分离”、一昧拘泥于认可欲求的人也是极其以自我为中心的人。认可欲求的实质————他人如何关注自己、如何评价自己？又在多大程度上满足自己的欲求？受这种认可欲求束缚的人看似在看着他人，但实际上眼里却只有自己。失去了对他人的关系而只关心“我”，也就是以自我为中心。（既要关心别人，又要不期望回报，感觉很难做到啊！）</p>
+</li>
+<li><p>阿德勒心理学认为归属感不是仅仅靠在那里就可以得到的，它必须靠积极地参与到共同体中去才能得到。所谓积极地参与，就是直面“人生课题”。也就是不回避工作、交友、爱之类的人际关系课题，要积极主动地去面对。如果你认为自己就是世界的中心，那就丝毫不会主动融入共同体中，因为一切他人都是“为我服务的人”，根本没必要自己采取行动。</p>
+<p>但是，无论是你还是我，我们都不是世界的中心，必须用自己的脚主动迈出一步去面对人际关系课题；不是考虑“这个人会给我什么”，而是必须思考一下“我能给这个人什么？”。这就是对共同体的参与和融合。</p>
+<p>类似于《活出生命的意义中》中，意义感来源于积极去解决世界抛给我们的问题，通过承担生命的责任，以获得意义感。</p>
+</li>
+<li><p>当我们在人际关系中遇到困难或者看不到出口的时候，首先应该考虑的是“倾听更大共同体的声音”这一原则、</p>
+</li>
+<li><p>阿德勒心理学中，既反对批评、又反对表扬。表扬这种行为含有“有能力者对没能力者所做的评价”这方面的特点。*人表扬他人的目的就在于“操纵逼自己能力低的对方”，其中既没有感谢也没有尊敬。*我们表扬或者批评他人只有“用糖还是用鞭子”的区别，其背后目的都是操纵。阿德勒心理学之所以强烈否定赏罚教育，就因为它是为了操纵孩子。</p>
+</li>
+<li><p>阿德勒心理学推崇“横向关系”，即“虽不同但平等”。自卑感原本就是从纵向关系中产生的一种意识。只要能够对所有人建立起“虽不同但平等”的横向关系，那就根本不会产生自卑情节。</p>
+</li>
+<li><p>人为什么会去干涉别人呢？其背后实际上也是一种纵向关系。正因为把人际关系看成纵向关系、把对方看的比自己低，所以才会去干涉。希望通过干涉行为把对方导向自己希望的方向。这是坚信自己正确而对方错误。</p>
+</li>
+<li><p>假如你会因为得到表扬而感到喜悦，那就等于是从属于纵向关系和承认“自己没能力”。因为表扬是“有能力的人对没能力的人所做出的评价”。如果以获得表扬为目的，那最终就会选择迎合他人价值观的生活方式。</p>
+<p><em><strong>人越得到别人的表扬就越会形成“自己没能力”的信念。</strong></em></p>
+</li>
+<li><p>最重要的是不“评价”他人，评价性的语言是基于纵向关系的语言。如果能够建立起横向关系，那自然就会说出一些更加真诚地表示感谢、尊敬或者喜悦的话。</p>
+</li>
+<li><p>阿德勒认为：<em><strong>人只有在能够感觉自己有价值的时候才可以获得勇气。</strong></em></p>
+<p>如果能够认为“自己有价值”的话，那个人就能够接纳自我并建立起直面人生课题的勇气。这里的问题是“究竟怎样才能够感觉自己有价值”这一点。</p>
+<p>人只有在可以体会到“我对共同体有用”，不是被别人评价说“很好”，而是主观上就能够认为“我能够为他人做出贡献”，只有这样我们才能够真正体会到自己的价值。</p>
+</li>
+<li><p>***只要存在着，就有价值。***不要用“行为”标准而是用存在标准去看待他人；不要用“行为标准”而是用“存在”标准去看待他人;不要用他人“做了什么”去判断，而应对其存在本身表示喜悦和感激。对于自己，不要用“行为”标准去考虑，而是首先要从“存在”标准上去接纳。</p>
+</li>
+<li><p>我们在看待他人的时候，往往会先任意虚构一个“对自己来说理想的形象”，然后再像做减法一样地去评价。不要这样，而应不将他人跟任何人去对比，就把他看作他自己，对他的存在心怀喜悦与感激，不要按照理想形象去扣分，而是从零起点出发。如果是这样的话，就能够对“存在”本身表示感谢了。</p>
+</li>
+<li><p>过多的自我意识，反而会束缚自己。</p>
+</li>
+<li><p>不是肯定自我，而是接纳自我。<br>把对自己的执着（self interest）转换成对他人的关心（social interest），建立起共同体感觉。<br>需从以下三点做起：“自我接纳”、“他者信赖”、“他者贡献”<br>自我接纳：对得了60分的自己说：“这次只是运气不好，真正的自己能得100分”，这是 <em><strong>自我肯定</strong></em>。<br>      在诚实地接受60分的自己的基础上努力思考“如何接近100分”，这才是 <em><strong>自我接纳</strong></em>。接受不能更换的事物，接受现实的“这个我”，然后，关于那些可以改变的事情，拿出改变的“勇气”<br>他者信赖：在相信他人的时候不附加任何条件。即使没有足以构成信用的客观依据也依然相信，无条件的相信。这就是信赖。<br>      假设你把人际关系的基础建立在“怀疑”之上。怀疑他人、怀疑朋友、甚至怀疑家人或恋人，生活中处处充满怀疑。那么，这样究竟会产生什么样的关系呢？对方也能够瞬时感觉到你怀疑的目光，会凭直觉认为“这个人不信赖我”。你认为这样还能建立起什么积极地关系吗？只有我们选择了无条件的信赖，才可以构筑更加深厚的关系。<br>      阿德勒心理学的观点很简单。你现在认为“无条件地信赖别人只会遭到背叛”。但是，决定背不背叛的不是你，那是他人的课题。你只需要考虑“我该怎么做”。“如果对方讲信用我也给予信任”，这只不过是一种基于抵押或条件的信用关系。<br>他者贡献：对作为伙伴的他人给予影响、作出贡献，这就是他者贡献。<br>      劳动并不是赚取金钱的手段，我们通过劳动来实现他者价值、参与共同体、体会“我对他人有用”，进而获得自己的存在价值。</p>
+</li>
+<li><p>幸福即贡献感。判断你的贡献是否起作用的不是你，那是他人的课题，是你无法干涉的问题。是否真正做出了贡献，从原理上根本无从了解。也就是说，进行他者贡献的时候我们即使做出看不见的贡献，<em>只要能够产生“我对他人有用”的主观感觉即“贡献感”也可以。</em></p>
+</li>
+<li><p>人们寻求认可的理由：人们想要喜欢自己，想要感觉自己有价值，为此就想要拥有“我对他人有用”的贡献感，而获得贡献感的常见手段就是寻求他人认可。</p>
+</li>
+<li><p>要有甘于平凡的勇气。</p>
+</li>
+<li><p>人生是一连串的刹那。请不要把人生理解为一条线，而要理解成点的连续。我们只能活在“此时此刻”，我们的人生只存在于刹那之中。</p>
+</li>
+<li><p>站在现实性角度的时候，人生总是处于完结状态。即使生命终结于“此时此刻”，那也并不足以称为不幸。假如认真过好了“此时此刻”，那每一个刹那就是一种完结。</p>
+</li>
+<li><p>人生的意义，由你自己决定。并不存在普遍性的人生意义，人生意义是自己赋予自己的。</p>
+</li>
+<li><p>引导之星————他者贡献。</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/28/6-%E3%80%8A%E5%8F%94%E6%9C%AC%E5%8D%8E%E7%9A%84%E6%B2%BB%E7%96%97%E3%80%8B%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Kms271">
+      <meta itemprop="description" content="行到水穷处，坐看云起时">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云崖小筑">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/28/6-%E3%80%8A%E5%8F%94%E6%9C%AC%E5%8D%8E%E7%9A%84%E6%B2%BB%E7%96%97%E3%80%8B%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">《叔本华的治疗》笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-03-28 20:44:29 / 修改时间：21:43:24" itemprop="dateCreated datePublished" datetime="2025-03-28T20:44:29+08:00">2025-03-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><p>现如今回想起那位冥想的年轻女子，他却体会到了一种更为柔和的感情，对她和所有的人类同胞都充满了同情，他们都是遭受进化畸形扭曲的受害者，进化赋予了他们自我意识，却不提供必要的心理工具来处理生命短暂所带来的痛苦。因此，在过去的几年、几百年、甚至几千年里，人类不懈的编造各种说法来否定生命的有限。我们每个人的一生，岂不都在不断探寻那位至高存在者，以求与之融合来获得永生：不断地寻求上天的旨意；不断地寻找证据来证明自己活在某种未知的既定计划里；不断地通过各种仪式来自我安慰？</p>
+</li>
+<li><p>除此之外还有什么呢？除了这段神奇的存有与自我意识并存的短暂而幸福的时光，我们还拥有什么？如果有什么是值得敬重和祝福的，那非它莫属————生命，人类被赋予的最珍贵的礼物，一次纯粹的存在。如果我们仅仅因为生命是有限的或生命没有更高的目标和既定的安排，便绝望的苟活于世，就实在是愚蠢且忘恩负义了。幻想着有一位无所不知的造物者，因而用一生的时间不停地虔诚跪拜，似乎毫无意义，并且浪费生命。为何要把所有的爱都挥霍在一个幻象上，而不去热爱这个真实的世界呢？与其这样，不如欣然接受斯宾诺莎和爱因斯坦给出的答案：只要低下头，向优雅而神秘的大自然和它的一切法则脱帽致敬，然后坦然地继续生活吧。</p>
+</li>
+<li><p>人自打一出生，就摆脱不了死亡的命运，尽管如此，我们仍然对延长生命抱以最大的兴趣和妄念，就像明知道肥皂泡注定要破灭，瞬间化为乌有，却仍固执地用尽力气将它越吹越大。</p>
+</li>
+<li><p>把一切“本是如此”都变为“我要它如此”————只有这样，我才称之为救赎。</p>
+<p>朱利亚斯是这样解读尼采这句话的：人必须选择自己的生活，必须活出生活的样子，而不是被生活所左右。换句话说，人必须热爱自己的命运。这当中最重要的是查拉图斯特拉反复提到的那个问题————我们是否愿意在永恒当中无限次重复过一样的生活？这真是个奇妙的思维实验，朱利亚斯越是细想这句话，就越能悟出它的导向：尼采所要传达的信息是，我们要活出一种让自己愿意无限次重复的生命。</p>
+</li>
+<li><p>一生都幸福是不可能的，一个人最多只能成就不畏艰难的一生。</p>
+</li>
+<li><p>如果我们从微小的细节去看生命，会觉得一切都是那么可笑。就像在显微镜下观察一滴水，里面挤满了原生动物，我们会嘲笑它们急于奔忙，彼此斗争。无论在这滴水里，还是在人类短暂的一生当中，这一可怕的活动都带有同样的喜剧色彩。</p>
+</li>
+<li><p>“我可曾想过让自己的生命在儿子身上延续？在一个比我更软弱、更摇摆、更胆怯的人身上继续活着？多么盲目、幼稚、愚蠢的想法！儿子又能为我做些什么呢？我死后又会去向哪里？啊，答案是那么清晰。我将与过去的我、现在的我或将来的我共存，尤其是那个活的最充实、最强大、最快乐的我！……我可曾憎恨过生命，纯粹、强大、坚韧的生命？多么愚蠢而错误的想法！我恨只恨自己无法继续承载生命。我爱你们所有这些有福之人，很快，再过不久，我将卸下自身狭隘的枷锁，不再与你们隔绝。那个爱你们的我的灵魂，将自由自在地与你们所有人同在。”</p>
+</li>
+<li><p>对于知道真相的人来说，这些小孩有时就像是无辜的少年犯：虽然他们并非被判处了死刑，而是被判了要生活下去，但对于这一判决的含义，这些小孩并不明白。尽管如此，每个人都想活至高龄，亦即进入这样的状态：“从今以后，每况愈下，直到最糟糕的一天终于来临。”</p>
+</li>
+<li><p>在无穷无尽的空间里有无数发光的球体，每一个球体周围都环绕着数十个更小的被照亮的球体，它们灼热的核心外面是冰冷的硬壳，一层发霉的薄膜覆于表面，孕育出了生命体和意识体……</p>
+</li>
+<li><p>生命是一种有“永久解答的暂时状态”</p>
+</li>
+<li><p>死亡是不可避免的，是一切纷扰的终点线。苏格拉底说得最透彻，他说“要想活得好，就必须先学会死得好”。或者如塞涅卡所说的，‘只有愿意并准备好结束生命的人才可能享受生活的真正滋味’。</p>
+</li>
+<li><p>最大的智慧就是把享受当下作为生命的最高目标，因为这才是唯一真实的，其余的一切都是思想的游戏。反之，我们也可以把它看作是最大的愚蠢，因为每个当下都如梦幻般稍纵即逝。</p>
+</li>
+<li><p>国王带不走他的王冠和权柄，英雄们也带不走他们的武器。但他们的荣光不是来自外界，乃是发自自身。唯有他们能把自身的伟大一起带往另一个世界。</p>
+</li>
+<li><p>当大多数人在生命的尽头回首往事时，才发现自己为了一些无谓的盼望而虚度了此生。他们会惊讶地发觉，那些被忽视的、不曾被好好享受便匆匆溜走的时光，恰恰就是他们的一生。</p>
+</li>
+<li><p>内观的核心概念就是无常。一个人只要能充分认识到一切感官刺激都有暂时性，用不了多久他就能用无常之道去参透生命万物与疾苦；一切都会过去，如果你能时刻保持观察者的立场，看淡一切过眼云烟，就能体会到内心的平静。</p>
+</li>
+<li><p>“我一直提醒自己，我们都被判了无期徒刑，在无法逃避的痛苦中生活。如果能预知真相，绝对没有人会选择过这样的生活。如此看来，正如叔本华所说，我们是一群受害者，我们都需要相互包容和关爱。”</p>
+</li>
+<li><p>我们应当限制自己的愿望，抑制自己的欲望，压抑自己的愤怒，并始终牢记这个事实：一个人一生中只能获得极少数的值得拥有的东西……</p>
+</li>
+<li><p>工作、忧虑、辛劳和烦恼几乎占据了每个人的一生。但如果所有的欲望一出现就得到了满足，人们又将如何度过他们的生命和时间呢？设想人类都住到乌托邦里，那里的一切都是自动生长的，天上飞的是烤熟了的鸽子。在那里，每个人都能立刻找到心上人，并毫不费力地长期相处。于是，人们会因为无聊而死或者干脆上吊自杀，要不然就是自相残杀。这样一来，他们遭受的痛苦要比现在大自然加在他们身上的痛苦多得多。</p>
+<p>如此说来，人的一生除了在需求、满足、无聊、再度需求中无限循环之外，还能做些什么？是否所有的生命形式都是如此？叔本华说，人类的情况来的更糟糕，因为智力越发达，痛苦也会越强烈。</p>
+<p>所以，这世上有快乐的人吗？人类究竟能不能得到快乐？叔本华的答案是否定的。</p>
+<p>首先，人从来就不曾快乐，但终其一生都在追求自认为会带来快乐的事物。很少有人能实现这一目标，即便实现了也只会失望，因为生命之船终归是要沉的，而在此之前这艘船已被摧残的七零八落了。所以无论快乐还是痛苦，到头来都是一回事，因为生命不过是一个不断消逝的当下，而今一切都结束了。</p>
+<p>生命的悲剧在于它不可避免的是一段下坡路，不仅残酷，而且完全变化无常。</p>
+<p>我们就好比在牧场玩耍的羔羊，被屠夫看见了，就一只接一只地被挑了去宰杀。正如我们在平安的日子里，全然不知将有什么灾祸会降临：疾病、迫害、贫困、残疾、失明、癫狂，还有死亡。</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/28/5-%E5%A1%94%E6%B4%9B%E6%96%AF%E7%9A%84%E6%B3%95%E5%88%99/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Kms271">
+      <meta itemprop="description" content="行到水穷处，坐看云起时">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云崖小筑">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/28/5-%E5%A1%94%E6%B4%9B%E6%96%AF%E7%9A%84%E6%B3%95%E5%88%99/" class="post-title-link" itemprop="url">塔洛斯的法则</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-03-28 20:25:04 / 修改时间：20:40:37" itemprop="dateCreated datePublished" datetime="2025-03-28T20:25:04+08:00">2025-03-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li><p>我相信造物主，因为我从自己身上感受到了创造的力量，这种力量似乎与某种更强大的东西有关或是能够将之反映出来，那 种动力直通向宇宙本身固有的“存在与成为”。万物论的发现并没有削弱这种信仰。哦，不…….恰恰相反，我相信创造的语言皆是的是一位造物主，在他眼里，数学与音乐毫无分别，他的太阳和行星都是旋律的音符，他的星系则是交响乐。星云是一副画作，原子是一台机器，它们都是一幅杰作的组成部分。而如果我错了，并没有造物主怎么办？那么完成这幅杰作的责任就落在了我们的身上。</p>
+</li>
+<li><p>我们当中那些相信造物主的人，必定会对万物论的发现深表感激。它那不可否认的事实并没有挑战我们的信仰，而是将之净化。它让我们能够摒弃那个填补空缺的上帝，那个在绝望中想象出来的神明，然后就能开始面对真正的造物主–内在的、超越的、不可简化的造物主。我们可以抛开对国王和牧师之神的信仰，将我们的目光转向造星者，星系与粒子的诗人，他的语言便是创造的音乐，或许这是一个更困难的信仰，而且没那么令人安慰;但只要我们凝神注视，我们就会看到奇迹。</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/28/4-%E6%8E%A5%E5%8F%97%E5%B9%B6%E7%83%AD%E7%88%B1%E4%BD%A0%E7%9A%84%E5%91%BD%E8%BF%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Kms271">
+      <meta itemprop="description" content="行到水穷处，坐看云起时">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云崖小筑">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/28/4-%E6%8E%A5%E5%8F%97%E5%B9%B6%E7%83%AD%E7%88%B1%E4%BD%A0%E7%9A%84%E5%91%BD%E8%BF%90/" class="post-title-link" itemprop="url">接受并热爱你的命运</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-03-28 15:49:34 / 修改时间：21:34:10" itemprop="dateCreated datePublished" datetime="2025-03-28T15:49:34+08:00">2025-03-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%93%B2%E6%80%9D/" itemprop="url" rel="index"><span itemprop="name">哲思</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="接受并热爱你的命运"><a href="#接受并热爱你的命运" class="headerlink" title="接受并热爱你的命运"></a>接受并热爱你的命运</h1><blockquote>
+<p>在《瞧，这个人》一书中，尼采写到:“所谓人类的伟大，我认为就是热爱命运：一个人不要除此之外的其他东西。未来不要，过去不要，永远都不要。不仅要忍受必然性，更不要隐瞒它-而要热爱它。在面对必然性时，所有理想主义都是谎言。”根据尼采的说法，你想要成为伟大的人，就要热爱你的命运。成为伟大的人意味着什么呢？我认为对于尼采而言，伟大意味着不奢求除自身之外的任何其它东西。伟大就是实现你的命运，是完全发挥你的潜能，是橡子变成橡树的过程，橡子蕴含着成为一颗强壮橡树的潜力，但只有它学会战胜自身，才能实现这种伟大。而尼采所说实现这种伟大的方式是“amor fati”。但amor fati是什么意思？在英语中，它被翻译为“热爱命运”。（LOVE Of FATE）命运是什么？命运是每个原因产生的必然影响，是每一个行动导致的结果，是事物发展成这样的原因。爱是什么？爱始于接受，当你接受某一事物本来的样子，你才能全新全意地对待它，当你全心全意地对待某一事物。你所看到的它就是它原本的样子，而不是你对它的幻想强加的滤镜。而当你看到事物的本貌时，你就会理解它，而当你理解某一事物时，你能够帮助他保持原貌，或者更好，完全实现它应有的样子，也就是帮助它实现它自身的伟大。热爱你的命运意味着什么？意味着接受发生在你身上的一切都是必然。而当你接受了发生在你身上的一切都是必然，你就可以开始学习为什么它是必然。你可以了解你做的或没有做的，是如何导致了这样的结果，你可以了解是什么原因产生了这样的影响。而当你了解了原因和其影响之间的关系时，你就可以允许或防止这些影响再次发生。</p>
+<p>我怎样才能热爱我的命运？我怎样才能学会接受所发生的一切都是必然？</p>
+</blockquote>
+<blockquote>
+<p>但其实这问题本身就不对，问题不应该是你如何才能热爱你的命运，而是为什么你现在不爱你命运？而你之所以不热爱你的命运，是因为你不接受它。你说：“我的生活不应该是这样的。”你的头脑中对它有个想象，你认为的它应该是怎样的，你用这个理想来衡量你的生活。所以当你看待你的过去，会感到遗憾、羞愧、内疚、愤怒和悲伤。你对未来充满恐惧，你也会用这个理想来衡量其他人。他们越是接近这个理想，你就越是用羡慕和怨恨的眼光看待他们。你认为这个世界根本上就是有缺陷的，不应该是现在这个样子，它应该以一种更合适你的方式来构建，也许你认为你应该比现在更强壮、更富有、更美丽或更快乐，也许你认为你应该比你现在拥有更多，而其他人应该比他们现在拥有更少。所以你不相信命运：因为它给你的远不如你认为你应该得到的。它让你痛苦，而当你不相信命运会发生什么？你不再看到事物的必然性，你就不会再去了解原因与结果之间的关系，而当你不再了解原因和结果之间的关系时，你就会妄想。你对命运的拒绝也是对真实的拒绝，所以当你拒绝命运时，你自己也变得虚假，你脱离了你本身的样子，所以你失去了你的伟大。</p>
+</blockquote>
+<p>现代人很容易受媒体的影响，觉得人生必须要达到什么目标或水准。潜移默化的让我们对当下的生活产生不满，这种不满会极大损耗生活的乐趣，也使我们伤害身边的人以及无法从当下的生活中获得幸福和力量。接受事情本来的面貌和必然性，我们才能从不满的泥沼中走出来，更好地体会和珍惜当下的生活。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/24/2-%E8%AE%BA%E5%87%BA%E7%94%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Kms271">
+      <meta itemprop="description" content="行到水穷处，坐看云起时">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云崖小筑">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/24/2-%E8%AE%BA%E5%87%BA%E7%94%9F/" class="post-title-link" itemprop="url">论出生</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-24 18:42:06" itemprop="dateCreated datePublished" datetime="2025-03-24T18:42:06+08:00">2025-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-03-27 11:01:12" itemprop="dateModified" datetime="2025-03-27T11:01:12+08:00">2025-03-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%93%B2%E6%80%9D/" itemprop="url" rel="index"><span itemprop="name">哲思</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="2025-3-16-论出生"><a href="#2025-3-16-论出生" class="headerlink" title="2025&#x2F;3&#x2F;16   论出生"></a>2025&#x2F;3&#x2F;16   论出生</h1><p>近日B站给我推送了一堆关于反生育主义的视频，正好我对其观点也颇感兴趣，于是详细浏览了一下。所谓反出生主义就秉持这样一种观点，未经孩子允许就让其出生，这是一种不道德的行为，更何况人生充满了痛苦与伤害，将一个生命带到这样的世界上，只是将痛苦继续延续。人们应当做的是携起手来，停止生育，欢庆人类种族灭绝的到来。我得说对于大部分人而言，这是一个极端且阴郁的主义。但其中不乏真知灼见。该理论对于人类存在的悲剧性有着很强的洞见，人因父母降临于世，从诞生那天起便被社会、时代所裹挟。众生皆苦，苦难与辛酸是人生的常态。更可悲的是，人生毫无意义，且人终有一死。毫无理由的降生，因软弱而延续，却又避无可避的走向死亡。怪不得这群反生育主义者会秉持这样的想法，正如《倚天屠龙记》中明教口号“生亦何欢，死亦何惧”，出生与其说是大喜之日，倒不如说是开始受难的大悲之日。于是反生育主义者们手牵手走上街头，高喊停止生育，对于养育后代的渴望可以转化为领养。这倒与我的想法不谋而合了，领养可以在某种程度上缓解世界上一部分苦难，而生育则会创造出新的痛苦。但反生育主义者是注定失败的，因为即使理性明白生育是不道德且残忍的，但人往往到了某个年龄就对生育后代有股无法遏制的冲动。写在基因中的种族延续的力量是强大的。就算反生育者可以说服一部分人，但总得结果很难有什么改变。对反生育主义者来说，这是一场旷日持久的战斗。</p>
+<p>那么来说说我的看法。首先我对反生育主义者对于人生痛苦的观点是部分认同的，让我们大大方方的承认吧！人生并非充满美好的旅程，人生充满了痛苦。将一个生命带至这个世界，无论我们如何努力，其受到的痛苦绝对要超过其感受到的快乐。某种程度上讲，这是由基因和物种选择决定的。想要生存下去，我们就必须对痛苦敏感。但这是否就能得出我们不该将生命带至这个世界呢？我看倒也未必。若是将追求快乐规避痛苦当作人生的首要追求，那生育确实称得上是一种暴行。但快乐和没有痛苦真的是超越一切的最高追求吗？如果抱有这种信念，那拥有意识就是最大的恶，毕竟除了肉体的疼痛以外，剩下的所有痛苦都可以说是来源于我们的意识了。我从不认为生命的诞生，意识的出现是什么悲剧。反而意识的出现是个奇迹。人的大脑——说的浪漫些——就是宇宙的感官。试想一下，如此恢弘壮丽的宇宙，却无人能意识到它惊心动魄的美，不会很遗憾吗？</p>
+<p>但我同样认为反生育主义者的出发点是好的——减轻所有物种的痛苦。我们应该从中学习，例如无偿支持女性做节育手术、支持堕胎、免费提供性教育科普与避孕产品。对即将为人父母者进行教育和培训。就算是反生育者也会喜爱一对优秀负责的父母胜过一个不生育的反社会恶人。<strong>也许我们最终所追求的不是反对生命的存在，而是为每一个即将来到这个世界上的生命提供一个更加美好的未来。也许有一天，我是说也许有一天，我们真的可以将天堂搬到人间。</strong></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/24/1-%E6%B5%8B%E8%AF%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Kms271">
+      <meta itemprop="description" content="行到水穷处，坐看云起时">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云崖小筑">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/24/1-%E6%B5%8B%E8%AF%95/" class="post-title-link" itemprop="url">测试</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-03-24 16:57:25 / 修改时间：18:37:17" itemprop="dateCreated datePublished" datetime="2025-03-24T16:57:25+08:00">2025-03-24</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>这是我的第一篇个人博客</p>
+<h2 id="快捷入门"><a href="#快捷入门" class="headerlink" title="快捷入门"></a>快捷入门</h2><h3 id="创建一个新帖子"><a href="#创建一个新帖子" class="headerlink" title="创建一个新帖子"></a>创建一个新帖子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>更多信息: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">写作</a></p>
+<h3 id="运行服务"><a href="#运行服务" class="headerlink" title="运行服务"></a>运行服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>更多信息: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">服务</a></p>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>更多信息: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">生成网站静态文件到默认设置的 public 文件夹</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>更多信息: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">自动生成网站静态文件，并部署到设定的仓库</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/17/10-2025-3-17-%E8%AE%B0%E4%B8%80%E4%B8%AA%E6%A2%A6%EF%BC%8C%E4%B8%80%E4%B8%AA%E4%B8%8D%E5%90%88%E6%97%B6%E5%AE%9C%E7%9A%84%E6%A2%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Kms271">
+      <meta itemprop="description" content="行到水穷处，坐看云起时">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云崖小筑">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/17/10-2025-3-17-%E8%AE%B0%E4%B8%80%E4%B8%AA%E6%A2%A6%EF%BC%8C%E4%B8%80%E4%B8%AA%E4%B8%8D%E5%90%88%E6%97%B6%E5%AE%9C%E7%9A%84%E6%A2%A6/" class="post-title-link" itemprop="url">2025/3/17 记一个梦，一个不合时宜的梦</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-17 20:36:10" itemprop="dateCreated datePublished" datetime="2025-03-17T20:36:10+08:00">2025-03-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-04-08 20:42:16" itemprop="dateModified" datetime="2025-04-08T20:42:16+08:00">2025-04-08</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%97%A5%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">日记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>梦往往是值得玩味的，一说其能揭示人心底所压抑的潜意识。我梦到什么了呢？我梦到我去开发独立游戏并且大获成功。说实话，我很反感这样的梦，因为它给了人们不切实际的期待，而现实，我几乎可以断言，一定不会顺你我的心意。但我觉得有必要说说我做独游的这个想法，这个想法在小学就有雏形了，此后便一直激励着我，直到我准备亲手实现它时，它成了挥之不去的梦魇和束缚。你懂得，初高中因为并没有去实现的机会，所以我可以大肆鼓吹这个梦想，幻想与之相关的各种未来。但当你亲自坐在桌前，打算实现它时，一切幻想都被打碎了。复杂的学习曲线，各试各样的要求令人望而生畏，但真正糟糕的地方在于我已经将其视作我人生的全部价值所在了，不知怎地我认为只有创作一款万古流芳的作品，我的人生才是有价值地，于是自然我陷入了痛苦和焦虑之中。我被自己的想法所困扰，深陷其中，以至于我忽视掉了我的人生一路走来所创造的点点滴滴的价值与贡献。我过于狂妄自大，以至于我对脑海里那个声音坚信不移。好在最后，我让这个想法let it go了。我现在把生活和价值的重心放在过好当下的每一分每一秒上了，这并不是说从此我的生活就没有问题和困惑了，但我深刻地觉得我正走在正确的道路上。至于制做独游，我还是对其有一定热情的，但我再也不会将其视作我人生的唯一选择和唯一价值来源。我相信秉持这种做好了很好，做不到也没关系的心态去制作游戏，去面对人生都是大有益处的。共勉。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/08/9-2025-3-8-%E6%97%A5%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Kms271">
+      <meta itemprop="description" content="行到水穷处，坐看云起时">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="云崖小筑">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/08/9-2025-3-8-%E6%97%A5%E8%AE%B0/" class="post-title-link" itemprop="url">2025/3/8 日记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-08 20:34:25" itemprop="dateCreated datePublished" datetime="2025-03-08T20:34:25+08:00">2025-03-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-04-08 20:42:33" itemprop="dateModified" datetime="2025-04-08T20:42:33+08:00">2025-04-08</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%97%A5%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">日记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>2025&#x2F;3&#x2F;8<br>为什么最近想记日记了呢？因为我对目前的生活可以说是十分满意的。说来奇怪，目前的生活远称不上完美，有许多的工作要做，感情上的事要处理还有各种各样的事情要纳入考量和规划之中，但不知为何我的内心就是有一股淡淡的平静和幸福感。人能降生在世上，能活着去体验去感受，实在是一件难能可贵的事。生命是值得感激的。将目光拉回当下，拉回到我们所能拥有和掌控的事物上就已经足够。不过回想一下，当下满足的状态也是会过去的，毕竟唯一不会改变的就是改变本身。当下感到幸福时，更要用心去感受、去体会，毕竟没人知道这份感受何时会消散。生命也是如此，在那个确定但不知何时会到来的结局降临之前，还是让我们收起内心的不满，好好体味存在的每一个瞬间吧。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Kms271</p>
+  <div class="site-description" itemprop="description">行到水穷处，坐看云起时</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Kms271</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
